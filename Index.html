@@ -3,65 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopVue - E-Commerce Landing</title>
+    <title>Ronald's Shop — Landing</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-        <!-- Navigation -->
-        <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent" id="navbar">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center h-16">
-                    <div class="flex items-center space-x-2">
-                        <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
-                            🛒
-                        </div>
-                        <span class="text-2xl font-bold text-white">ShopVue</span>
-                    </div>
-                    <div class="hidden md:flex items-center space-x-8">
-                        <a href="#" class="text-gray-300 hover:text-white transition">Home</a>
-                        <a href="#" class="text-gray-300 hover:text-white transition">Products and Services</a>
-                        <a href="#" class="text-gray-300 hover:text-white transition">About Us</a>
-                        <a href="#" class="text-gray-300 hover:text-white transition">Contact Us</a>
-                    </div>
-                    <button class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full hover:shadow-lg hover:shadow-purple-500/50 transition">
-                        Sign In
-                    </button>
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">🛒</div>
+                    <span class="text-2xl font-bold text-white">Ronald's Shop</span>
                 </div>
-            </div>
-        </nav>
-
-        <!-- Hero Section -->
-        <div class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-            <div class="max-w-7xl mx-auto">
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div class="space-y-8">
-                        <span class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full text-sm font-semibold inline-block">
-                            New Collection 2024
-                        </span>
-                        <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight">
-                            Discover Your<br><span class="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Perfect Style</span>
-                        </h1>
-                        <p class="text-xl text-gray-300">Shop the latest trends with exclusive deals. Premium quality, unbeatable prices.</p>
-                        <div class="flex flex-wrap gap-4">
-                            <button class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-2xl hover:shadow-purple-500/50 transition">
-                                Shop Now →
-                            </button>
-                            <button class="border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition">
-                                View Collection
-                            </button>
-                        </div>
-                    </div>
+                <div class="hidden md:flex items-center space-x-8 text-sm">
+                    <a href="public/products-and-services.php" class="text-white font-semibold">Products</a>
+                    <a href="public/about-us.php" class="text-gray-300 hover:text-white transition">About</a>
+                    <a href="public/contact-us.php" class="text-gray-300 hover:text-white transition">Contact</a>
                 </div>
             </div>
         </div>
 
-        <!-- Footer -->
-        <footer class="bg-slate-900/50 backdrop-blur-xl border-t border-white/10 py-12 px-4 sm:px-6 lg:px-8">
-            <div class="max-w-7xl mx-auto text-center">
-                <p class="text-gray-400">© 2024 ShopVue. Built with HTML & Tailwind CSS</p>
+    <main class="flex-1 pt-28 pb-16 px-4 sm:px-6 lg:px-8">
+        <section class="max-w-5xl mx-auto space-y-8 text-center">
+            <p class="text-sm uppercase tracking-[0.4em] text-purple-300">Ronald’s Shop</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-white">Affordable, thoughtful clothing for every PUPian</h1>
+            <p class="text-lg text-gray-300">Built by a fellow Iskolar ng Bayan, this shop brings curated essentials, seasonal drops, and custom orders to students who value quality without the premium price tag.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a class="px-6 py-3 rounded-full bg-white text-slate-900 font-semibold" href="public/products-and-services.php">Shop the collection</a>
+                <a class="px-6 py-3 rounded-full border border-white/40 hover:bg-white/10 transition" href="public/contact-us.php">Get in touch</a>
             </div>
-        </footer>
-    </div>
+            <div class="grid sm:grid-cols-3 gap-4 text-left">
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-6 space-y-3">
+                    <p class="text-sm uppercase tracking-[0.4em] text-purple-300">Quality</p>
+                    <h3 class="text-xl font-semibold">Student-grade fabrics</h3>
+                    <p class="text-sm text-gray-300">Durable, comfortable pieces tuned for campus life.</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-6 space-y-3">
+                    <p class="text-sm uppercase tracking-[0.4em] text-purple-300">Community</p>
+                    <h3 class="text-xl font-semibold">For PUPians</h3>
+                    <p class="text-sm text-gray-300">Affordable pricing and a commitment to giving back.</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-6 space-y-3">
+                    <p class="text-sm uppercase tracking-[0.4em] text-purple-300">Care</p>
+                    <h3 class="text-xl font-semibold">Responsive support</h3>
+                    <p class="text-sm text-gray-300">Orders, custom projects, and bulk inquiries handled with heart.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
